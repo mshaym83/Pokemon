@@ -40,7 +40,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "ng build --aot true"
+      "pre-push": "ng build --aot true"
     }
   }
 }
