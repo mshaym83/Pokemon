@@ -1,10 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { SearchComponent } from './search/search.component';
+import { SortComponent } from './sort/sort.component';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    SearchComponent,
+    SortComponent
+  ],
   imports: [
     CommonModule
   ]
