@@ -40,7 +40,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-comit": "npm run test"
+      "pre-commit": "ng build --aot true"
     }
   }
 }
