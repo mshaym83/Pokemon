@@ -1,1 +1,19 @@
-<p>pokemon works!</p>
+<div class="card" tabindex="0" (click)="routeTodetail()" (keydown.enter) = "routeTodetail()">
+  <div class="pokemon-avtar">
+    <img src="{{pokemone?.sprites?.front_shiny}}" alt="Avatar">
+  </div>
+
+  <div class="card-container">
+    <h4 *ngIf="pokemone"><b>{{pokemone?.name! | capitalizeFirst}}</b></h4>
+    <p>
+      <span>Weight :{{pokemone?.weight}}</span>
+      <span>Height :{{ pokemone?.height}}</span>
+    </p>
+    <h5>Abilitie</h5>
+    <ul *ngIf="pokemone?.abilities">
+      <li *ngFor="let abilitie of pokemone.abilities">
+        {{abilitie.ability.name}}
+      </li>
+    </ul>
+  </div>
+</div>
